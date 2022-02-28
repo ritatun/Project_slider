@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap');
+
+html {
+    font-size: 14px;
+}
+.main {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100vw;
+    color: white;
+    font-family: 'Nunito Sans', normal;
+}
+.wrapper {
+    width: 75vw;
+    //background-color: yellow;
+    height: 80vh;
+    margin: 10vh auto;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.projects__left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+.projects__left-column__heading {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.projects__left-column__heading__name {
+    margin-right: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 35px;
+    font-family: 'Yeseva One', normal;
+    font-size: 1.93rem;
+    padding-top: 45px;
+}
+.projects__left-column__heading__line {
+    width: 92px;
+    border: solid 1px #E3B873;
+    align-self: end;
+    margin-bottom: 35px;
+}
+
+.projects__left-column__character {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 35px;
+    margin-top: 40px;
+}
+
+.grid-header {
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 5px;
+    font-family: 'Yeseva One', normal;
+    font-size: 1.3rem;
+}
+.projects__right-column {
+    flex-grow: 2;
+}
+.projects__right-column__cities {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 45px;
+}
+.city-link {
+    font-family: 'Yeseva One', normal;
+    color: #E3B873;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.city-link:hover {
+    text-decoration: underline;
+}
+
+.city:nth-child(2) {
+    margin: 0 55px;
+}
+
+.image-here {
+    //временно
+    .width: 100%;
+    background-color: red;
+    height: 100%;
+}
+
+
