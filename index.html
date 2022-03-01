@@ -19,7 +19,8 @@
                     <div class="projects__left-column__heading__line"></div>
                 </div>
                 <div class="projects__left-column__description">
-                    Only a small part of the work performed by our company is presented <br> on the site. For 14 years on in the construction <br>
+                    Only a small part of the work performed by our company is presented <br> 
+                    on the site. For 14 years on in the construction <br>
                     market we have made happy more than 1000 families
                 </div>
                 <div class="projects__left-column__character">
@@ -42,25 +43,52 @@
                     </div>
                 </div>
                 <div class="arrows">
-                    <div class="left-arrow"></div>
-                    <div class="circle circle-1"></div>
-                    <div class="circle circle-2"></div>
-                    <div class="circle circle-2"></div>
-                    <div class="right-arrow"></div>
+                    <div class="left-arrow">
+                        <button class="left-arrow__button">
+                            <svg class="left-arrow__button__svg">
+                                <use xlink:href="#button-left"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="circles">
+                        <div class="circle__item item-1 active-circle" data-city="admiral"></div>
+                        <div class="circle__item item-2" data-city="thieves"></div>
+                        <div class="circle__item item-3" data-city="patriotic"></div>
+                    </div>
+                    <div class="right-arrow">
+                        <button class="right-arrow__button">
+                            <svg class="right-arrow__button__svg">
+                                <use xlink:href="#button-right"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="projects__right-column">
                 <div class="projects__right-column__cities">
-                    <div class="city city-1"><a href="" class="city-link admiral">Rostov-on-Don, Admiral</a></div>
-                    <div class="city city-2"><a href="" class="city-link thieves">Sochi Thieves</a></div>
-                    <div class="city city-3"><a href="" class="city-link patriotic">Rostov-on-Don Patriotic</a></div>
+                    <div class="city city-1 admiral" data-city="admiral">Rostov-on-Don, Admiral</div>
+                    <div class="city city-2 thieves" data-city="thieves">Sochi Thieves</div>
+                    <div class="city city-3 patriotic" data-city="patriotic">Rostov-on-Don Patriotic</div>
                 </div>
                 <div class="slider">
-                    <div class="image-here">image-here</div>
+                    <div class="image image-1 activeImage" title="Rostov-on-Don, Admiral" data-city="admiral"></div>
+                    <div class="image image-2" title="Sochi Thieves" data-city="thieves"></div>
+                    <div class="image image-3" title="Rostov-on-Don Patriotic" data-city="patriotic"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <svg display="none" class="icon">
+        <symbol id="button-left" viewBox="0 0 20 20">
+            <g><path d="M 3.5 7 L 0 10.5 L 3.5 14 L 5 14 L 2 11 L 19 11 L 19 10 L 2 10 L 5 7 L 3.5 7 z " style="fill:#ffffff; fill-opacity:1;"/></g>
+        </symbol>
+        
+        <symbol id="button-right" viewBox="0 0 20 20">
+            <g><path d="M 13 6 L 17 10 L 0 10 L 0 11 L 17 11 L 13 15 L 14.5 15 L 19 10.5 L 14.5 6 L 13 6 z" style="fill:#ffffff; fill-opacity:1;"/></g>
+        </symbol>
+    </svg>
+
 
     <script src="index.js"></script>
 </body>

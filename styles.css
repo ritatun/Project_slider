@@ -14,15 +14,13 @@ html {
 }
 .wrapper {
     width: 75vw;
-    //background-color: yellow;
     height: 80vh;
     margin: 10vh auto;
 }
 .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 
 .projects__left-column {
@@ -30,7 +28,8 @@ html {
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
-    flex-grow: 1;
+    margin-bottom: 50px;
+    /* flex-grow: 1; */
 }
 .projects__left-column__heading {
     display: flex;
@@ -69,23 +68,78 @@ html {
     font-family: 'Yeseva One', normal;
     font-size: 1.3rem;
 }
+
+.arrows {
+    display: flex;
+    justify-content: start;
+    margin: 25px 0;
+    
+}
+
+.left-arrow__button, .right-arrow__button {
+    width: 35px;
+    height: 30px;
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+.left-arrow__button__svg, 
+.right-arrow__button__svg {
+    width: 35px;
+    height: 30px;
+}
+
+#button-left, #button-right {
+    stroke-width: 0.7px;  
+}
+
+.left-arrow__button__svg:hover,
+.right-arrow__button__svg:hover {
+    stroke: #E3B873;
+    stroke-width: 0;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle__item {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 7.5px;
+}
+
+.circle__item:hover {
+    background-color: #E3B873;
+}
+
+.active-circle {
+    background-color: #5c5c5c;
+}
+
 .projects__right-column {
-    flex-grow: 2;
+    /* flex-grow: 2; */
+    max-width: 679px;
 }
 .projects__right-column__cities {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
-.city-link {
+.city {
     font-family: 'Yeseva One', normal;
     color: #E3B873;
     cursor: pointer;
     text-decoration: none;
 }
 
-.city-link:hover {
+.city:hover {
     text-decoration: underline;
 }
 
@@ -93,11 +147,36 @@ html {
     margin: 0 55px;
 }
 
-.image-here {
-    //временно
-    .width: 100%;
-    background-color: red;
-    height: 100%;
+.image-1 {
+    background-image: url("./image/image_1.png");
+    width: 679px;
+    height: 482px;
+    display: none;
+   /*  background-repeat: cover; */
 }
 
+.image-2 {
+    background-image: url("./image/image_2.png");
+    width: 679px;
+    height: 483px;
+    display: none;
+}
 
+.image-3 {
+    background-image: url("./image/image_3.png");
+    width: 679px;
+    height: 483px;
+    display: none;
+}
+
+.image-1.activeImage  {
+    display: block;
+}
+
+.image-2.activeImage  {
+    display: block;
+}
+
+.image-3.activeImage  {
+    display: block;
+}
